@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #cccccc87;
+}
+
+header {
+  background-color: #006699;
+  color: white;
+  border-color: #c88851;
+  border-width: 5px; 
+  border-style: solid;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #51b6c8;
+  padding: 10px;
+}
+
+section {
+  margin-top: 40px;
+  border-color: #c88851;
+  border-width: 5px; 
+  border-style: solid;
+  padding: 20px;
+}
+
+
+/* Quiénes somos: cajas grandes, fijas */
+.quienes-box {
+  background: #eeeeee;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Profesionales en fila, sin adaptación */
+.profesionales-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profesional {
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  flex-shrink: 0; /* no se achican */
+}
+
+/* Servicios: también en fila, no adaptativos */
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.servicio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #dddddd;
+  text-align: center;
+  
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+/* Contacto */
+#contacto {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea {
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 150px;
+  width: 300px;
+}
+
+.enviarconsulta {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Celular: hasta 600px */
+@media (max-width: 600px) {
+  
+  header{
+    background-color: red;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    background-color: tomato;
+    flex: 1 1 100%;
+  }
+
+  .profesional{
+    align-items: center;
+    
+  }
+
+}
+
